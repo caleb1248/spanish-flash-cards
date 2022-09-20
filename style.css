@@ -1,0 +1,28 @@
+.card {
+  background-color: greenyellow;
+  width: 20%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.flipping {
+  animation: lol .5s linear;
+}
+
+@keyframes lol {
+  0% {
+    transform: scaleX()
+  }
+
+  50% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
