@@ -1,28 +1,41 @@
-.card {
-  background-color: greenyellow;
-  width: 20%;
-  height: 20%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html, body {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-
-  border-radius: 10px;
+  font-family: "Roboto";
 }
 
-.flipping {
-  animation: lol .5s linear;
+.next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: rgb(32, 170, 32);
+  font-size: 200%;
+  font-weight: 100;
+  cursor: pointer;
+  padding: 30px;
 }
 
-@keyframes lol {
-  0% {
-    transform: scaleX()
-  }
+.next:hover {
+  background-color: lightgrey;
+}
 
-  50% {
-    transform: scaleX(0);
-  }
+.back {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: rgb(32, 170, 32);
+  font-size: 200%;
+  font-weight: 100;
+  cursor: pointer;
+  padding: 30px;
+}
 
-  100% {
-    transform: scaleX(1);
-  }
+.back:hover {
+  background-color: lightgrey;
 }
