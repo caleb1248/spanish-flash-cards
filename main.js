@@ -11,12 +11,12 @@ function loadDeck(cards) {
   /** @param {string[][]} c @returns {string[][]} */
 
   function loadCards(c) {
-    return c.sort(() => Math.random());
+    return c.sort( () => 0.5 - Math.random());
   }
 
   function setIndex(newIndex) {
     index = newIndex;
-    card = cardList[index].sort(() => Math.random());
+    card = cardList[index].sort(() => 0.5 - Math.random());
     document.querySelector(".front").innerHTML = card[0];
     document.querySelector(".backside").innerHTML = card[1];
   }
